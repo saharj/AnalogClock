@@ -11,9 +11,10 @@ import QuartzCore
 import Foundation
 
 class ClockViewController: UIViewController {
-
+    
     var imageView : UIImageView?
     var clockView : ClockView?
+    
     
     override func loadView() {
         view = UIView(frame: UIScreen.mainScreen().bounds)
@@ -30,15 +31,26 @@ class ClockViewController: UIViewController {
         imageView = UIImageView(frame: clockFrame)
         clockView = ClockView(frame: clockFrame)
         
-        
         view.addSubview(imageView!)
         view.addSubview(clockView!)
+        
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView?.image = UIImage(named: "aClock")
+        
+//        ClockView.animateWithDuration(1.0, animations: {
+//            ClockView.drawSecHand(CGRect).transform = CGAffineTransformMakeRotation(angle: SEC_MIN_ROTATE_ANG)
+//            } , completion: nil)
     }
+//    
+//    func rotateSecHand(rect : CGRect) {
+//        ClockView.animateWithDuration(1.0, animations: {
+//            ClockView.drawSecHand(UIView.clockFrame).transform = CGAffineTransformMakeRotation(angle: SEC_MIN_ROTATE_ANG)
+//            } , completion: nil)
+//    }
     
 }
 
