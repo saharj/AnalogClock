@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1185C46D-B463-4076-8440-602BBF64A3F8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Analog-Clock</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2A11B71B484A6C15A5B5120AAF6DDEEFB950B287</key>
+		<string>github.com:saharj/AnalogClock.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Analog-Clock.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2A11B71B484A6C15A5B5120AAF6DDEEFB950B287</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:saharj/AnalogClock.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2A11B71B484A6C15A5B5120AAF6DDEEFB950B287</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2A11B71B484A6C15A5B5120AAF6DDEEFB950B287</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Analog-Clock</string>
+		</dict>
+	</array>
+</dict>
+</plist>

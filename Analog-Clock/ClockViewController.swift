@@ -41,16 +41,46 @@ class ClockViewController: UIViewController {
         super.viewDidLoad()
         imageView?.image = UIImage(named: "aClock")
         
-//        ClockView.animateWithDuration(1.0, animations: {
-//            ClockView.drawSecHand(CGRect).transform = CGAffineTransformMakeRotation(angle: SEC_MIN_ROTATE_ANG)
-//            } , completion: nil)
+        
+        let timer = NSTimer.scheduledTimerWithTimeInterval(1,
+            target: self,
+            selector: Selector("setTime:"),
+            userInfo: nil,
+            repeats: true)
+        
+        setTime(timer)
+        
+        //NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
     }
-//    
-//    func rotateSecHand(rect : CGRect) {
-//        ClockView.animateWithDuration(1.0, animations: {
-//            ClockView.drawSecHand(UIView.clockFrame).transform = CGAffineTransformMakeRotation(angle: SEC_MIN_ROTATE_ANG)
-//            } , completion: nil)
-//    }
+    
+    
+    func setTime(timer : NSTimer) {
+        var date = NSDate()
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.timeStyle = .MediumStyle
+        
+        var elements = dateFormatter.stringFromDate(NSDate()).componentsSeparatedByString(":")
+        
+        var hour = elements[0].toInt()
+        var min = elements[1].toInt()
+        var lastElem = elements[2].componentsSeparatedByString(" ")
+        var sec = lastElem[0].toInt()
+        
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            self.setHands(hour!, m: min!, s: sec!)
+        }
+        
+    }
+    
+    func setHands(h : Int, m : Int, s : Int) {
+        clockView?.clearsContextBeforeDrawing
+        clockView?.time.hour = h
+        clockView?.time.min = m
+        clockView?.time.sec = s
+        
+        clockView?.setNeedsDisplay()
+    }
     
 }
 
