@@ -16,8 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        let tabBar = UITabBarController()
+        
+        tabBar.viewControllers = [ClockViewController(), DigitalViewController()]
+        
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.rootViewController = ClockViewController()
+        window?.rootViewController = tabBar
+        
         window?.makeKeyAndVisible()
         
         return true

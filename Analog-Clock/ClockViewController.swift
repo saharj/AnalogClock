@@ -14,6 +14,7 @@ class ClockViewController: UIViewController {
     
     var imageView : UIImageView?
     var clockView : ClockView?
+
     
     
     override func loadView() {
@@ -39,6 +40,11 @@ class ClockViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        tabBarItem.title = "Analog"
+        //tabBarItem.image = UIImage(named: "analog-clock-icon")
+        
         imageView?.image = UIImage(named: "aClock")
         
         

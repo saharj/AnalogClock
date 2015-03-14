@@ -14,6 +14,7 @@
 		1F03D8581AA541920082B005 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F03D8571AA541920082B005 /* Images.xcassets */; };
 		1F03D8BB1AAAAE970082B005 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F03D8BA1AAAAE970082B005 /* ClockView.swift */; };
 		1F03D8BD1AAAAF0C0082B005 /* BackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F03D8BC1AAAAF0C0082B005 /* BackupViewController.swift */; };
+		1F8193051AB4D64600CAED8E /* DigitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8193041AB4D64600CAED8E /* DigitalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		1F03D8571AA541920082B005 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		1F03D8BA1AAAAE970082B005 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		1F03D8BC1AAAAF0C0082B005 /* BackupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackupViewController.swift; sourceTree = "<group>"; };
+		1F8193041AB4D64600CAED8E /* DigitalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				1F03D8351A9D63470082B005 /* AppDelegate.swift */,
 				1F03D8371A9D63470082B005 /* ClockViewController.swift */,
 				1F03D8BA1AAAAE970082B005 /* ClockView.swift */,
+				1F8193041AB4D64600CAED8E /* DigitalViewController.swift */,
 				1F03D8BC1AAAAF0C0082B005 /* BackupViewController.swift */,
 				1F03D8571AA541920082B005 /* Images.xcassets */,
 				1F03D83E1A9D63470082B005 /* LaunchScreen.xib */,
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F03D8381A9D63470082B005 /* ClockViewController.swift in Sources */,
+				1F8193051AB4D64600CAED8E /* DigitalViewController.swift in Sources */,
 				1F03D8BB1AAAAE970082B005 /* ClockView.swift in Sources */,
 				1F03D8BD1AAAAF0C0082B005 /* BackupViewController.swift in Sources */,
 				1F03D8361A9D63470082B005 /* AppDelegate.swift in Sources */,
@@ -403,6 +407,7 @@
 				1F03D8511A9D63470082B005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F03D8521A9D63470082B005 /* Build configuration list for PBXNativeTarget "Analog-ClockTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +416,7 @@
 				1F03D8541A9D63470082B005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
