@@ -8,19 +8,23 @@
 
 import UIKit
 
+struct Time {
+    var hour : Int = 0
+    var min : Int = 0
+    var sec : Int = 0
+}
+
 class ClockView: UIView {
     
-    
     // make a function to update the time (viewController will use it)
-    
+
+    var time : Time = Time() {
+        didSet {}
+    }
     
     let HOUR_HAND_SIZE = CGSize(width: 12, height: 90)
     let MIN_HAND_SIZE = CGSize(width: 8, height: 130)
     let SEC_HAND_SIZE = CGSize(width: 4, height: 150)
-    
-    var hour : Int = 11
-    var min : Int = 55
-    var sec : Int = 45
     
     
     override init(frame: CGRect) {
@@ -45,7 +49,7 @@ class ClockView: UIView {
         let x = (rect.size.width / 2) - (HOUR_HAND_SIZE.width / 2)
         let y = (rect.size.width / 2) - HOUR_HAND_SIZE.height
         
-        rotate(context, rect: rect, deg: hour * 30)
+        rotate(context, rect: rect, deg: time.hour * 30)
         
         CGContextFillRect(context, CGRect(x: x, y: y, width: HOUR_HAND_SIZE.width, height: HOUR_HAND_SIZE.height))
         
@@ -56,7 +60,7 @@ class ClockView: UIView {
         let x = (rect.size.width / 2) - (MIN_HAND_SIZE.width / 2)
         let y = (rect.size.width / 2) - MIN_HAND_SIZE.height
         
-        rotate(context, rect: rect, deg: min * 6 - hour * 30)
+        rotate(context, rect: rect, deg: time.min * 6 - time.hour * 30) // to avoid the problem of add to prev angel
         
         CGContextFillRect(context, CGRect(x: x, y: y, width: MIN_HAND_SIZE.width, height: MIN_HAND_SIZE.height))
     }
@@ -68,7 +72,7 @@ class ClockView: UIView {
         let y = (rect.size.width / 2) - (SEC_HAND_SIZE.height) + 20
         CGContextSetRGBFillColor(context, 1.0, 0.0, 0.0, 1.0)
         
-        rotate(context, rect: rect, deg: sec * 6 - min * 6)
+        rotate(context, rect: rect, deg: time.sec * 6 - time.min * 6)
         
         CGContextFillRect(context, CGRect(x: x, y: y, width: SEC_HAND_SIZE.width, height: SEC_HAND_SIZE.height))
     }
