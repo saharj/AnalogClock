@@ -50,7 +50,6 @@ class ClockViewController: UIViewController {
         
         setTime(timer)
         
-        //NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
     }
     
     

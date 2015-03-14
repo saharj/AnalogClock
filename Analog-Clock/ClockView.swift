@@ -49,7 +49,7 @@ class ClockView: UIView {
         let x = (rect.size.width / 2) - (HOUR_HAND_SIZE.width / 2)
         let y = (rect.size.width / 2) - HOUR_HAND_SIZE.height
         
-        rotate(context, rect: rect, deg: time.hour * 30)
+        rotate(context, rect: rect, deg: (time.hour * 30) + (time.min * 1/2))
         
         CGContextFillRect(context, CGRect(x: x, y: y, width: HOUR_HAND_SIZE.width, height: HOUR_HAND_SIZE.height))
         
