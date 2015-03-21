@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="AlarmTableViewCell" customModule="Analog_Clock" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AlarmName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiz-2r-adx">
+                        <rect key="frame" x="8" y="43" width="239" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="gVa-dP-Kr6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AlarmTime" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YX4-gh-1bX">
+                        <rect key="frame" x="8" y="8" width="173" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="173" id="ASr-Ur-HNJ"/>
+                            <constraint firstAttribute="height" constant="38" id="f3o-QG-4mT"/>
+                            <constraint firstAttribute="width" constant="173" id="iAB-Re-P3n"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lXf-Vm-Qrf">
+                        <rect key="frame" x="255" y="29" width="51" height="31"/>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qiz-2r-adx" firstAttribute="top" secondItem="YX4-gh-1bX" secondAttribute="bottom" constant="-3" id="19d-ce-IdZ"/>
+                    <constraint firstItem="qiz-2r-adx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="KhZ-gc-WBE"/>
+                    <constraint firstItem="YX4-gh-1bX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="TrT-Oy-igb"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lXf-Vm-Qrf" secondAttribute="trailing" constant="8" id="UJa-Xf-aor"/>
+                    <constraint firstItem="YX4-gh-1bX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="XaF-l2-MKS"/>
+                    <constraint firstAttribute="centerY" secondItem="lXf-Vm-Qrf" secondAttribute="centerY" constant="0.5" id="e9Q-ZJ-XXp"/>
+                    <constraint firstItem="lXf-Vm-Qrf" firstAttribute="leading" secondItem="qiz-2r-adx" secondAttribute="trailing" constant="8" id="qmj-YZ-gec"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellAlarmName" destination="qiz-2r-adx" id="hUy-Qa-cI1"/>
+                <outlet property="cellAlarmSwitch" destination="lXf-Vm-Qrf" id="xdr-5i-86u"/>
+                <outlet property="cellAlarmTime" destination="YX4-gh-1bX" id="3Q6-8R-C6U"/>
+            </connections>
+            <point key="canvasLocation" x="431" y="416.5"/>
+        </tableViewCell>
+    </objects>
+</document>
