@@ -23,6 +23,7 @@
 		1F8BB6031ABE11A600C687AA /* AlarmList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F8BB6011ABE11A600C687AA /* AlarmList.xcdatamodeld */; };
 		1F8BB6061ABE13D100C687AA /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8BB6041ABE13D100C687AA /* AddAlarmViewController.swift */; };
 		1F8BB6071ABE13D100C687AA /* AddAlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8BB6051ABE13D100C687AA /* AddAlarmViewController.xib */; };
+		1F8BB6091ABE362600C687AA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8BB6081ABE362600C687AA /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		1F8BB6021ABE11A600C687AA /* AlarmList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlarmList.xcdatamodel; sourceTree = "<group>"; };
 		1F8BB6041ABE13D100C687AA /* AddAlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddAlarmViewController.swift; path = ../AddAlarmViewController.swift; sourceTree = "<group>"; };
 		1F8BB6051ABE13D100C687AA /* AddAlarmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddAlarmViewController.xib; path = ../AddAlarmViewController.xib; sourceTree = "<group>"; };
+		1F8BB6081ABE362600C687AA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8BB6091ABE362600C687AA /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		1F03D8271A9D63470082B005 = {
 			isa = PBXGroup;
 			children = (
+				1F8BB6081ABE362600C687AA /* CoreData.framework */,
 				1F8BB6011ABE11A600C687AA /* AlarmList.xcdatamodeld */,
 				1F03D8321A9D63470082B005 /* Analog-Clock */,
 				1F03D8481A9D63470082B005 /* Analog-ClockTests */,

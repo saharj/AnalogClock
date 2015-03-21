@@ -13,7 +13,7 @@ import CoreData
 let managedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
 var fetchedResultsController : NSFetchedResultsController!
 
-var InitObjects : [AlarmListObject] = []
+var InitObjects = [AlarmListObject]()
 
 
 class SettingViewController: UITableViewController, NSFetchedResultsControllerDelegate {

@@ -19,40 +19,80 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Alarm Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2R-DB-3Hu">
-                    <rect key="frame" x="156" y="106" width="278" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Alarm Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2R-DB-3Hu">
+                    <rect key="frame" x="16" y="130" width="568" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alarm Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuq-hw-d6U">
-                    <rect key="frame" x="156" y="153" width="87" height="30"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HH : MM  AM/PM " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2i-tG-7xH">
+                    <rect key="frame" x="111" y="176" width="473" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Sq-33-iOZ">
-                    <rect key="frame" x="135" y="248" width="320" height="162"/>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B8n-hG-6SQ">
+                    <rect key="frame" x="535" y="207" width="51" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="ilE-oJ-WDy"/>
+                    </constraints>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarm On" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0x-Ai-1w8">
+                    <rect key="frame" x="16" y="217" width="89" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="89" id="GNb-9c-C6u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarm Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuq-hw-d6U">
+                    <rect key="frame" x="16" y="176" width="87" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="87" id="gOL-xn-wr8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Sq-33-iOZ">
+                    <rect key="frame" x="8" y="430" width="584" height="162"/>
                     <date key="date" timeIntervalSinceReferenceDate="447986528.98892498">
                         <!--2015-03-14 00:42:08 +0000-->
                     </date>
                 </datePicker>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HH : MM  AM/PM " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2i-tG-7xH">
-                    <rect key="frame" x="287" y="153" width="152" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B8n-hG-6SQ">
-                    <rect key="frame" x="330" y="194" width="51" height="31"/>
-                </switch>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alarm On" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0x-Ai-1w8">
-                    <rect key="frame" x="157" y="201" width="89" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5Sq-33-iOZ" secondAttribute="bottom" constant="8" id="1Cl-PV-WqT"/>
+                <constraint firstItem="5Sq-33-iOZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="6qS-Zh-Y0R"/>
+                <constraint firstItem="s2i-tG-7xH" firstAttribute="top" secondItem="q2R-DB-3Hu" secondAttribute="bottom" constant="16" id="7TS-Jy-B1R"/>
+                <constraint firstItem="B8n-hG-6SQ" firstAttribute="trailing" secondItem="s2i-tG-7xH" secondAttribute="trailing" id="91c-f4-Cdg"/>
+                <constraint firstItem="B8n-hG-6SQ" firstAttribute="leading" secondItem="s2i-tG-7xH" secondAttribute="trailing" constant="-49" id="Ch0-p4-p3P"/>
+                <constraint firstItem="A0x-Ai-1w8" firstAttribute="top" secondItem="fuq-hw-d6U" secondAttribute="bottom" constant="20" id="H5U-ad-mgU"/>
+                <constraint firstItem="q2R-DB-3Hu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="130" id="Q2P-yI-FFL">
+                    <variation key="heightClass=compact" constant="41"/>
+                </constraint>
+                <constraint firstItem="q2R-DB-3Hu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="SrO-u0-EIm"/>
+                <constraint firstItem="s2i-tG-7xH" firstAttribute="leading" secondItem="fuq-hw-d6U" secondAttribute="trailing" constant="8" id="Upd-C6-0Ek"/>
+                <constraint firstItem="fuq-hw-d6U" firstAttribute="leading" secondItem="A0x-Ai-1w8" secondAttribute="leading" id="Xmy-9B-P07"/>
+                <constraint firstAttribute="trailing" secondItem="q2R-DB-3Hu" secondAttribute="trailing" constant="16" id="YsX-t4-jlS"/>
+                <constraint firstItem="q2R-DB-3Hu" firstAttribute="trailing" secondItem="s2i-tG-7xH" secondAttribute="trailing" id="evc-qV-gom"/>
+                <constraint firstItem="q2R-DB-3Hu" firstAttribute="leading" secondItem="fuq-hw-d6U" secondAttribute="leading" id="hNQ-XR-qNv"/>
+                <constraint firstAttribute="trailing" secondItem="5Sq-33-iOZ" secondAttribute="trailing" constant="8" id="k3R-Tw-foP"/>
+                <constraint firstItem="B8n-hG-6SQ" firstAttribute="top" secondItem="s2i-tG-7xH" secondAttribute="bottom" constant="10" id="lNg-p3-lkn"/>
+                <constraint firstItem="fuq-hw-d6U" firstAttribute="top" secondItem="q2R-DB-3Hu" secondAttribute="bottom" constant="16" id="pqE-4B-dyx"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="REC-3R-xrv" appends="YES" id="5o1-ow-b8G"/>
+            </connections>
+            <point key="canvasLocation" x="429" y="314"/>
         </view>
+        <tapGestureRecognizer id="REC-3R-xrv">
+            <connections>
+                <action selector="bodyTapped:" destination="-1" id="Gsu-fL-tFz"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>

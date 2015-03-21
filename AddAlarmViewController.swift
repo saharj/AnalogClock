@@ -22,6 +22,10 @@ class AddAlarmViewController: UIViewController {
     var AlarmSwitchOnOff: NSNumber!
     var existingItem : NSManagedObject!
     
+    @IBAction func bodyTapped(sender: AnyObject) {
+        self.view.endEditing(true)
+        self.resignFirstResponder()
+    }
     
     override func loadView() {
         super.loadView()
