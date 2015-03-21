@@ -15,6 +15,10 @@
 		1F03D8BB1AAAAE970082B005 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F03D8BA1AAAAE970082B005 /* ClockView.swift */; };
 		1F03D8BD1AAAAF0C0082B005 /* BackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F03D8BC1AAAAF0C0082B005 /* BackupViewController.swift */; };
 		1F8193051AB4D64600CAED8E /* DigitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8193041AB4D64600CAED8E /* DigitalViewController.swift */; };
+		1F8193071AB79BB400CAED8E /* digital-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F8193061AB79BB400CAED8E /* digital-font.ttf */; };
+		1F8BB5F61ABE020E00C687AA /* SettingsNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8BB5F51ABE020E00C687AA /* SettingsNavController.swift */; };
+		1F8BB5F91ABE02CC00C687AA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8BB5F71ABE02CC00C687AA /* SettingViewController.swift */; };
+		1F8BB5FA1ABE02CC00C687AA /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8BB5F81ABE02CC00C687AA /* SettingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		1F03D8BA1AAAAE970082B005 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		1F03D8BC1AAAAF0C0082B005 /* BackupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackupViewController.swift; sourceTree = "<group>"; };
 		1F8193041AB4D64600CAED8E /* DigitalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitalViewController.swift; sourceTree = "<group>"; };
+		1F8193061AB79BB400CAED8E /* digital-font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-font.ttf"; sourceTree = "<group>"; };
+		1F8BB5F51ABE020E00C687AA /* SettingsNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsNavController.swift; sourceTree = "<group>"; };
+		1F8BB5F71ABE02CC00C687AA /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		1F8BB5F81ABE02CC00C687AA /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 		1F03D8271A9D63470082B005 = {
 			isa = PBXGroup;
 			children = (
+				1F8193061AB79BB400CAED8E /* digital-font.ttf */,
 				1F03D8321A9D63470082B005 /* Analog-Clock */,
 				1F03D8481A9D63470082B005 /* Analog-ClockTests */,
 				1F03D8311A9D63470082B005 /* Products */,
@@ -84,6 +93,9 @@
 				1F03D8351A9D63470082B005 /* AppDelegate.swift */,
 				1F03D8371A9D63470082B005 /* ClockViewController.swift */,
 				1F03D8BA1AAAAE970082B005 /* ClockView.swift */,
+				1F8BB5F51ABE020E00C687AA /* SettingsNavController.swift */,
+				1F8BB5F71ABE02CC00C687AA /* SettingViewController.swift */,
+				1F8BB5F81ABE02CC00C687AA /* SettingViewController.xib */,
 				1F8193041AB4D64600CAED8E /* DigitalViewController.swift */,
 				1F03D8BC1AAAAF0C0082B005 /* BackupViewController.swift */,
 				1F03D8571AA541920082B005 /* Images.xcassets */,
@@ -198,8 +210,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8193071AB79BB400CAED8E /* digital-font.ttf in Resources */,
 				1F03D8401A9D63470082B005 /* LaunchScreen.xib in Resources */,
 				1F03D8581AA541920082B005 /* Images.xcassets in Resources */,
+				1F8BB5FA1ABE02CC00C687AA /* SettingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +235,8 @@
 				1F8193051AB4D64600CAED8E /* DigitalViewController.swift in Sources */,
 				1F03D8BB1AAAAE970082B005 /* ClockView.swift in Sources */,
 				1F03D8BD1AAAAF0C0082B005 /* BackupViewController.swift in Sources */,
+				1F8BB5F61ABE020E00C687AA /* SettingsNavController.swift in Sources */,
+				1F8BB5F91ABE02CC00C687AA /* SettingViewController.swift in Sources */,
 				1F03D8361A9D63470082B005 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,8 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         let tabBar = UITabBarController()
+        let settingsNav : SettingsNavController = SettingsNavController()
+        settingsNav.pushViewController(SettingViewController(), animated: false)
+        settingsNav.tabBarItem.title = "Settings"
         
-        tabBar.viewControllers = [ClockViewController(), DigitalViewController()]
+        let digitalClock = DigitalViewController()
+        digitalClock.tabBarItem.title = "Digital"
+        
+        tabBar.viewControllers = [ClockViewController(),digitalClock , settingsNav]
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = tabBar

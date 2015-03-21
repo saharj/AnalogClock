@@ -11,19 +11,35 @@ import UIKit
 class DigitalViewController: UIViewController {
     
     override func loadView() {
-        self.view = UIView()
+        self.view = UIView(frame: UIScreen.mainScreen().bounds)
         
         self.view.backgroundColor = UIColor.whiteColor()
         
-        var label = UILabel()
-        label.text = "Hello!"
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tabBarItem.title = "Digital"
         //tabBarItem.image = UIImage(named: "analog-clock-item")
+        
+        var label = UILabel(frame: CGRectMake(0, 0, 200, 21))
+        
+        
+        
+        let viewWidth = self.view.frame.width
+        //let viewHeight = self.view.frame.height
+        
+        label.center = CGPointMake(viewWidth / 2 , 284)
+        label.textAlignment = NSTextAlignment.Center
+        label.text = "15:25:22"
+        //label.font = UIFont (name: "digital-font", size: CGFloat(30))
+        
+        label.textColor = UIColor.blackColor()
+        
+        self.view.addSubview(label)
+        
+        
     }
 
     /*

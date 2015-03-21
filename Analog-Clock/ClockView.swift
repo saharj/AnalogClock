@@ -53,6 +53,8 @@ class ClockView: UIView {
         
         CGContextFillRect(context, CGRect(x: x, y: y, width: HOUR_HAND_SIZE.width, height: HOUR_HAND_SIZE.height))
         
+        //var path = UIBezierPath(roundedRect: rect, byRoundingCorners: UIRectCorner.AllCorners, cornerRadii: CGSize(width: (HOUR_HAND_SIZE.width) / 2, height: (HOUR_HAND_SIZE.height) / 2))
+        //path.addClip()
     }
     
     func drawMinHand(rect : CGRect) {
@@ -75,6 +77,9 @@ class ClockView: UIView {
         rotate(context, rect: rect, deg: time.sec * 6 - time.min * 6)
         
         CGContextFillRect(context, CGRect(x: x, y: y, width: SEC_HAND_SIZE.width, height: SEC_HAND_SIZE.height))
+        
+        //var path = UIBezierPath(roundedRect: rect, byRoundingCorners: UIRectCorner.AllCorners, cornerRadii: CGSize(width: 4.0/*SEC_HAND_SIZE.width*/, height: 4.0/*SEC_HAND_SIZE.height*/))
+        //path.addClip()
     }
     
     func degreeToRadian(deg : Int) -> CGFloat {
