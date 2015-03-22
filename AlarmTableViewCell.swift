@@ -9,10 +9,6 @@
 import UIKit
 
 class AlarmTableViewCell: UITableViewCell {
-
-//    @IBOutlet var cellAlarmTime: UILabel!
-//    @IBOutlet var cellAlarmName: UILabel!
-//    @IBOutlet var cellAlarmSwitch: UISwitch!
     
     @IBOutlet var cellAlarmTime: UILabel!
     

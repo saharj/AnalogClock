@@ -28,6 +28,7 @@ class SettingViewController: UITableViewController, NSFetchedResultsControllerDe
         navigationItem.rightBarButtonItem = addButton
         
         navigationItem.title = "Settings"
+//        self.tableView.allowsSelection = false
         
         let alarmTableViewCellNib = UINib(nibName: "AlarmTableViewCell", bundle: nil)
         
@@ -143,28 +144,37 @@ class SettingViewController: UITableViewController, NSFetchedResultsControllerDe
         //        }
         //        cell.accessoryView = enabledSwitch
         
+        cell.accessoryType = .DisclosureIndicator
+        
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //        let UpdateItem = self.fetchedResultsController.objectAtIndexPath(indexPath) as AlarmListObject
-        //
-        //        let cellIdentifier = "SetAlarmCell"
-        //        let cell = self.tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as AlarmTableViewCell
-        //
-        //
-        //        if cell.cellAlarmSwitch.on {
-        //            UpdateItem.alarmSwitch = 1
-        //        } else {
-        //            UpdateItem.alarmSwitch = 0
-        //        }
-        //
-        //
-        //        var e: NSError?
-        //        if managedObjectContext!.save(&e) != true {
-        //            println("update error: \(e!.localizedDescription)")
-        //        }
-        //
+        
+        
+        // THIS CODE SHOULD BE IN CELL CLASS
+//            let UpdateItem = fetchedResultsController.objectAtIndexPath(indexPath) as AlarmListObject
+//        
+//            let cellIdentifier = "Alarm"
+//            let cell = self.tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as AlarmTableViewCell
+//        
+//        
+//                if cell.cellAlarmSwitch.on {
+//                    UpdateItem.alarmSwitch = 1
+//                } else {
+//                    UpdateItem.alarmSwitch = 0
+//                }
+//        
+//        
+//                var e: NSError?
+//                if managedObjectContext!.save(&e) != true {
+//                    println("update error: \(e!.localizedDescription)")
+//                }
+        
+        let add = AddAlarmViewController()
+        add.existingItem = InitObjects[indexPath.row]
+        
+        navigationController?.pushViewController(add, animated: true)
     }
     
     
