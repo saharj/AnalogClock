@@ -15,7 +15,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AlarmName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiz-2r-adx">
-                        <rect key="frame" x="8" y="43" width="239" height="26"/>
+                        <rect key="frame" x="16" y="43" width="231" height="26"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="26" id="gVa-dP-Kr6"/>
                         </constraints>
@@ -24,7 +24,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AlarmTime" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YX4-gh-1bX">
-                        <rect key="frame" x="8" y="8" width="173" height="38"/>
+                        <rect key="frame" x="16" y="8" width="173" height="38"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="173" id="ASr-Ur-HNJ"/>
                             <constraint firstAttribute="height" constant="38" id="f3o-QG-4mT"/>
@@ -39,10 +39,10 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="qiz-2r-adx" firstAttribute="top" secondItem="YX4-gh-1bX" secondAttribute="bottom" constant="-3" id="19d-ce-IdZ"/>
-                    <constraint firstItem="qiz-2r-adx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="KhZ-gc-WBE"/>
+                    <constraint firstItem="qiz-2r-adx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="KhZ-gc-WBE"/>
                     <constraint firstItem="YX4-gh-1bX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="TrT-Oy-igb"/>
                     <constraint firstAttribute="trailingMargin" secondItem="lXf-Vm-Qrf" secondAttribute="trailing" constant="8" id="UJa-Xf-aor"/>
-                    <constraint firstItem="YX4-gh-1bX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="XaF-l2-MKS"/>
+                    <constraint firstItem="YX4-gh-1bX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="XaF-l2-MKS"/>
                     <constraint firstAttribute="centerY" secondItem="lXf-Vm-Qrf" secondAttribute="centerY" constant="0.5" id="e9Q-ZJ-XXp"/>
                     <constraint firstItem="lXf-Vm-Qrf" firstAttribute="leading" secondItem="qiz-2r-adx" secondAttribute="trailing" constant="8" id="qmj-YZ-gec"/>
                 </constraints>

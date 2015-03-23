@@ -43,7 +43,7 @@ class ClockViewController: UIViewController {
         
         
         tabBarItem.title = "Analog"
-        //tabBarItem.image = UIImage(named: "analog-clock-icon")
+        tabBarItem.image = UIImage(named: "analogClockIcon")
         
         imageView?.image = UIImage(named: "aClock")
         

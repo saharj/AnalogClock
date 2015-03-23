@@ -20,10 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabBar = UITabBarController()
         let settingsNav : SettingsNavController = SettingsNavController()
         settingsNav.pushViewController(SettingViewController(), animated: false)
-        settingsNav.tabBarItem.title = "Settings"
+        settingsNav.tabBarItem.title = "Alarm"
+        settingsNav.tabBarItem.image = UIImage(named: "alarmIcon")
         
         let digitalClock = DigitalViewController()
         digitalClock.tabBarItem.title = "Digital"
+        digitalClock.tabBarItem.image = UIImage(named: "digitalClockIcon")
         
         tabBar.viewControllers = [ClockViewController(),digitalClock , settingsNav]
         

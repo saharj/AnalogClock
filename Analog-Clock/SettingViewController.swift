@@ -27,8 +27,7 @@ class SettingViewController: UITableViewController, NSFetchedResultsControllerDe
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: Selector("openAddAlarm"))
         navigationItem.rightBarButtonItem = addButton
         
-        navigationItem.title = "Settings"
-//        self.tableView.allowsSelection = false
+        navigationItem.title = "Alarm"
         
         let alarmTableViewCellNib = UINib(nibName: "AlarmTableViewCell", bundle: nil)
         

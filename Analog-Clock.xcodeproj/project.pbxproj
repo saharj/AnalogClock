@@ -13,7 +13,6 @@
 		1F03D84C1A9D63470082B005 /* Analog_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F03D84B1A9D63470082B005 /* Analog_ClockTests.swift */; };
 		1F03D8581AA541920082B005 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F03D8571AA541920082B005 /* Images.xcassets */; };
 		1F03D8BB1AAAAE970082B005 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F03D8BA1AAAAE970082B005 /* ClockView.swift */; };
-		1F03D8BD1AAAAF0C0082B005 /* BackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F03D8BC1AAAAF0C0082B005 /* BackupViewController.swift */; };
 		1F8193051AB4D64600CAED8E /* DigitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8193041AB4D64600CAED8E /* DigitalViewController.swift */; };
 		1F8BB5F61ABE020E00C687AA /* SettingsNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8BB5F51ABE020E00C687AA /* SettingsNavController.swift */; };
 		1F8BB5F91ABE02CC00C687AA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8BB5F71ABE02CC00C687AA /* SettingViewController.swift */; };
@@ -24,6 +23,9 @@
 		1F8BB6061ABE13D100C687AA /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8BB6041ABE13D100C687AA /* AddAlarmViewController.swift */; };
 		1F8BB6071ABE13D100C687AA /* AddAlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8BB6051ABE13D100C687AA /* AddAlarmViewController.xib */; };
 		1F8BB6091ABE362600C687AA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8BB6081ABE362600C687AA /* CoreData.framework */; };
+		1F8BB60E1ABF7F2100C687AA /* digital-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F8BB60D1ABF7F2100C687AA /* digital-font.ttf */; };
+		1F8BB6191ABF8BF400C687AA /* Snap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8BB6151ABF8B9A00C687AA /* Snap.framework */; };
+		1F8BB61A1ABF8BF400C687AA /* Snap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8BB6151ABF8B9A00C687AA /* Snap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +36,42 @@
 			remoteGlobalIDString = 1F03D82F1A9D63470082B005;
 			remoteInfo = "Analog-Clock";
 		};
+		1F8BB6141ABF8B9A00C687AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8BB60F1ABF8B9900C687AA /* Snap.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = Snap;
+		};
+		1F8BB6161ABF8B9A00C687AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8BB60F1ABF8B9900C687AA /* Snap.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = SnapTests;
+		};
+		1F8BB61B1ABF8BF400C687AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8BB60F1ABF8B9900C687AA /* Snap.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = Snap;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F8BB61D1ABF8BF400C687AA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F8BB61A1ABF8BF400C687AA /* Snap.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F03D8301A9D63470082B005 /* Analog-Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Analog-Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,7 +84,6 @@
 		1F03D84B1A9D63470082B005 /* Analog_ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analog_ClockTests.swift; sourceTree = "<group>"; };
 		1F03D8571AA541920082B005 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		1F03D8BA1AAAAE970082B005 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
-		1F03D8BC1AAAAF0C0082B005 /* BackupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackupViewController.swift; sourceTree = "<group>"; };
 		1F8193041AB4D64600CAED8E /* DigitalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitalViewController.swift; sourceTree = "<group>"; };
 		1F8BB5F51ABE020E00C687AA /* SettingsNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsNavController.swift; sourceTree = "<group>"; };
 		1F8BB5F71ABE02CC00C687AA /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +94,8 @@
 		1F8BB6041ABE13D100C687AA /* AddAlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddAlarmViewController.swift; path = ../AddAlarmViewController.swift; sourceTree = "<group>"; };
 		1F8BB6051ABE13D100C687AA /* AddAlarmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddAlarmViewController.xib; path = ../AddAlarmViewController.xib; sourceTree = "<group>"; };
 		1F8BB6081ABE362600C687AA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1F8BB60D1ABF7F2100C687AA /* digital-font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-font.ttf"; sourceTree = "<group>"; };
+		1F8BB60F1ABF8B9900C687AA /* Snap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snap.xcodeproj; path = Snap/Snap.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8BB6191ABF8BF400C687AA /* Snap.framework in Frameworks */,
 				1F8BB6091ABE362600C687AA /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +121,7 @@
 		1F03D8271A9D63470082B005 = {
 			isa = PBXGroup;
 			children = (
+				1F8BB60F1ABF8B9900C687AA /* Snap.xcodeproj */,
 				1F8BB6081ABE362600C687AA /* CoreData.framework */,
 				1F8BB6011ABE11A600C687AA /* AlarmList.xcdatamodeld */,
 				1F03D8321A9D63470082B005 /* Analog-Clock */,
@@ -105,10 +145,9 @@
 				1F03D8351A9D63470082B005 /* AppDelegate.swift */,
 				1F03D8371A9D63470082B005 /* ClockViewController.swift */,
 				1F03D8BA1AAAAE970082B005 /* ClockView.swift */,
+				1F8193041AB4D64600CAED8E /* DigitalViewController.swift */,
 				1F8BB5F51ABE020E00C687AA /* SettingsNavController.swift */,
 				1F8BB5F71ABE02CC00C687AA /* SettingViewController.swift */,
-				1F8193041AB4D64600CAED8E /* DigitalViewController.swift */,
-				1F03D8BC1AAAAF0C0082B005 /* BackupViewController.swift */,
 				1F8BB5FB1ABE0A4F00C687AA /* AlarmTableViewCell.swift */,
 				1F8BB5FC1ABE0A4F00C687AA /* AlarmTableViewCell.xib */,
 				1F8BB5FF1ABE0F3600C687AA /* AlarmListObject.swift */,
@@ -125,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				1F03D8341A9D63470082B005 /* Info.plist */,
+				1F8BB60D1ABF7F2100C687AA /* digital-font.ttf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -146,6 +186,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1F8BB6101ABF8B9900C687AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F8BB6151ABF8B9A00C687AA /* Snap.framework */,
+				1F8BB6171ABF8B9A00C687AA /* SnapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,10 +205,12 @@
 				1F03D82C1A9D63470082B005 /* Sources */,
 				1F03D82D1A9D63470082B005 /* Frameworks */,
 				1F03D82E1A9D63470082B005 /* Resources */,
+				1F8BB61D1ABF8BF400C687AA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1F8BB61C1ABF8BF400C687AA /* PBXTargetDependency */,
 			);
 			name = "Analog-Clock";
 			productName = "Analog-Clock";
@@ -213,6 +264,12 @@
 			mainGroup = 1F03D8271A9D63470082B005;
 			productRefGroup = 1F03D8311A9D63470082B005 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1F8BB6101ABF8B9900C687AA /* Products */;
+					ProjectRef = 1F8BB60F1ABF8B9900C687AA /* Snap.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1F03D82F1A9D63470082B005 /* Analog-Clock */,
@@ -221,11 +278,29 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		1F8BB6151ABF8B9A00C687AA /* Snap.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Snap.framework;
+			remoteRef = 1F8BB6141ABF8B9A00C687AA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8BB6171ABF8B9A00C687AA /* SnapTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SnapTests.xctest;
+			remoteRef = 1F8BB6161ABF8B9A00C687AA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		1F03D82E1A9D63470082B005 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8BB60E1ABF7F2100C687AA /* digital-font.ttf in Resources */,
 				1F8BB6071ABE13D100C687AA /* AddAlarmViewController.xib in Resources */,
 				1F8BB5FE1ABE0A4F00C687AA /* AlarmTableViewCell.xib in Resources */,
 				1F03D8401A9D63470082B005 /* LaunchScreen.xib in Resources */,
@@ -252,7 +327,6 @@
 				1F8BB6061ABE13D100C687AA /* AddAlarmViewController.swift in Sources */,
 				1F03D8BB1AAAAE970082B005 /* ClockView.swift in Sources */,
 				1F8BB5FD1ABE0A4F00C687AA /* AlarmTableViewCell.swift in Sources */,
-				1F03D8BD1AAAAF0C0082B005 /* BackupViewController.swift in Sources */,
 				1F8BB5F61ABE020E00C687AA /* SettingsNavController.swift in Sources */,
 				1F8BB6001ABE0F3600C687AA /* AlarmListObject.swift in Sources */,
 				1F8BB6031ABE11A600C687AA /* AlarmList.xcdatamodeld in Sources */,
@@ -276,6 +350,11 @@
 			isa = PBXTargetDependency;
 			target = 1F03D82F1A9D63470082B005 /* Analog-Clock */;
 			targetProxy = 1F03D8461A9D63470082B005 /* PBXContainerItemProxy */;
+		};
+		1F8BB61C1ABF8BF400C687AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Snap;
+			targetProxy = 1F8BB61B1ABF8BF400C687AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -372,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Analog-Clock/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -383,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Analog-Clock/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
